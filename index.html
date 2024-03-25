@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>JavaScript Practice</title>
+</head>
+<body>
+    <h1 id="heading1" style="cursor: pointer;">description</h1>
+    <p style="display: none;">    Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure eos consequuntur ut fugit alias labore aspernatur error, at voluptatibus nihil ab, autem ex et rerum officia tempore in similique totam porro. Enim fugit quaerat id soluta fuga quidem nesciunt velit voluptatibus neque, minus nisi deserunt error facere inventore magni dolores!
+    </p>
+    <h1 id="heading2" style="cursor:  pointer;">Summary</h1>
+    <p style="display: none;">    Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos nihil perferendis placeat nemo! Ab delectus a nobis voluptatum maiores voluptates quibusdam magnam, quo eligendi porro eaque earum ad voluptas, inventore praesentium nesciunt laboriosam impedit corrupti velit nam quasi necessitatibus dignissimos dolore quia? Fugit aliquam ipsa praesentium at sint. Eum, asperiores?
+    </p>
+</body>
+
+<script>
+    const heading1 = document.getElementById("heading1");
+    const heading2 = document.getElementById("heading2");
+    const para1 = document.querySelector('p');
+    const para2 = document.querySelectorAll('p')[1];
+    
+    heading1.addEventListener('click', ()=>{
+        para1.style.display = para1.style.display === 'none' ? 'block' : 'none'
+    });
+    heading2.addEventListener('click', ()=>{
+        para2.style.display = para2.style.display === 'none' ? 'block' : 'none'
+    });
+</script>
+<script src="assets/js/scripts.js"></script>
+</html>
+
